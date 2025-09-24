@@ -10,7 +10,7 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Arial', sans-serif;
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -18,7 +18,7 @@
       line-height: 1.6;
       overflow-x: hidden;
     }
-    
+
     /* Animated background elements */
     .bg-animation {
       position: fixed;
@@ -29,26 +29,26 @@
       z-index: -1;
       overflow: hidden;
     }
-    
+
     .floating-shape {
       position: absolute;
       background: rgba(6, 78, 59, 0.05);
       border-radius: 50%;
       animation: float 20s infinite ease-in-out;
     }
-    
+
     .shape-1 { width: 100px; height: 100px; top: 20%; left: 10%; animation-delay: 0s; }
     .shape-2 { width: 150px; height: 150px; top: 60%; right: 20%; animation-delay: 5s; }
     .shape-3 { width: 80px; height: 80px; bottom: 30%; left: 60%; animation-delay: 10s; }
     .shape-4 { width: 120px; height: 120px; top: 40%; left: 80%; animation-delay: 15s; }
-    
+
     @keyframes float {
       0%, 100% { transform: translateY(0px) rotate(0deg); }
       25% { transform: translateY(-20px) rotate(90deg); }
       50% { transform: translateY(0px) rotate(180deg); }
       75% { transform: translateY(-15px) rotate(270deg); }
     }
-    
+
     header {
       background: linear-gradient(135deg, #064e3b 0%, #047857 100%);
       color: white;
@@ -58,7 +58,7 @@
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
-    
+
     header::before {
       content: '';
       position: absolute;
@@ -69,20 +69,20 @@
       background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
       animation: shimmer 4s ease-in-out infinite;
     }
-    
+
     @keyframes shimmer {
       0%, 100% { transform: rotate(0deg); }
       50% { transform: rotate(180deg); }
     }
-    
+
     header img {
       max-width: 200px;
       border-radius: 15px;
       position: relative;
       z-index: 2;
     }
-    
-    
+
+
     .title {
       font-size: 32px;
       margin-top: 20px;
@@ -92,12 +92,12 @@
       z-index: 2;
       animation: titleGlow 3s ease-in-out infinite;
     }
-    
+
     @keyframes titleGlow {
       0%, 100% { text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 10px rgba(255,255,255,0.2); }
       50% { text-shadow: 2px 2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(255,255,255,0.4); }
     }
-    
+
     .slogan {
       font-size: 18px;
       opacity: 0.9;
@@ -106,13 +106,13 @@
       z-index: 2;
       font-style: italic;
     }
-    
+
     .section {
       padding: 60px 20px;
       text-align: center;
       position: relative;
     }
-    
+
     .section h2 {
       color: #064e3b;
       margin-bottom: 40px;
@@ -120,7 +120,7 @@
       position: relative;
       display: inline-block;
     }
-    
+
     .section h2::after {
       content: '';
       position: absolute;
@@ -132,7 +132,7 @@
       background: linear-gradient(90deg, #064e3b, #047857);
       border-radius: 2px;
     }
-    
+
     .schedule {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -140,7 +140,7 @@
       max-width: 1000px;
       margin: auto;
     }
-    
+
     .card {
       background: white;
       padding: 30px;
@@ -150,7 +150,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .card::before {
       content: '';
       position: absolute;
@@ -160,19 +160,19 @@
       height: 4px;
       background: linear-gradient(90deg, #064e3b, #047857, #10b981);
     }
-    
+
     .card:hover {
       transform: translateY(-10px) scale(1.02);
       box-shadow: 0 25px 50px rgba(0,0,0,0.15);
     }
-    
+
     .card h3 {
       color: #064e3b;
       margin-bottom: 15px;
       font-size: 20px;
       position: relative;
     }
-    
+
     .card h3::before {
       content: '';
       position: absolute;
@@ -182,11 +182,11 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-    
+
     .card:hover h3::before {
       opacity: 1;
     }
-    
+
     .contact {
       margin-top: 60px;
       background: rgba(255,255,255,0.1);
@@ -198,7 +198,7 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
+
     .contact button {
       border: none;
       padding: 18px 35px;
@@ -217,14 +217,14 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     .contact button svg {
       display: inline-block;
       vertical-align: middle;
       margin-right: 8px;
       flex-shrink: 0;
     }
-    
+
     .contact button::before {
       content: '';
       position: absolute;
@@ -235,30 +235,30 @@
       background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
       transition: left 0.6s ease;
     }
-    
+
     .contact button:hover::before {
       left: 100%;
     }
-    
+
     .contact button.whatsapp {
       background: linear-gradient(135deg, #25D366, #128C7E);
       box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
     }
-    
+
     .contact button.telegram {
       background: linear-gradient(135deg, #0088cc, #0066aa);
       box-shadow: 0 8px 20px rgba(0, 136, 204, 0.3);
     }
-    
+
     .contact button:hover {
       transform: translateY(-3px) scale(1.05);
       box-shadow: 0 15px 30px rgba(0,0,0,0.2);
     }
-    
+
     .contact button:active {
       transform: translateY(-1px) scale(1.02);
     }
-    
+
     footer {
       background: linear-gradient(135deg, #064e3b 0%, #047857 100%);
       color: white;
@@ -268,7 +268,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     footer::before {
       content: '';
       position: absolute;
@@ -278,36 +278,36 @@
       height: 2px;
       background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
     }
-    
+
     /* Mobile responsiveness */
     @media (max-width: 768px) {
       .title {
         font-size: 24px;
       }
-      
+
       .schedule {
         grid-template-columns: 1fr;
         gap: 20px;
       }
-      
+
       .contact button {
         display: inline-flex;
         width: 200px;
         margin: 15px auto;
       }
-      
+
       .section {
         padding: 40px 15px;
       }
     }
-    
+
     /* Scroll animations */
     .fade-in {
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.6s ease;
     }
-    
+
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
@@ -327,17 +327,52 @@
     <div class="title">Դեպի Քոբուլեթի</div>
     <div class="slogan">Սիրով սպասում ենք ձեզ</div>
   </header>
-  
+
   <section class="section">
     <h2 class="fade-in">Ուղևորության Մանրամասներ</h2>
     <div class="schedule">
       <div class="card fade-in">
         <h3> 2 անգամյա սնունդ</h3>
-        <p>Համեղ և բարակության ճաշատեսակներ բոլոր ճանապարհորդության ընթացքում</p>
+        <p>Համեղ  ճաշատեսակներ հմուտ խոհարարների կողմից պատրաստված</p>
       </div>
       <div class="card fade-in">
-        <h3> Հյուրանոց</h3>
-        <p>Հարմարավետ և մաքուր սենյակներ հանգստի համար</p>
+        <h3>⭐⭐⭐⭐ Հյուրանոց</h3>
+        <div style="margin-bottom: 15px;">
+          <strong style="color: #047857; font-size: 16px;">Kobuleti Georgia Palace Hotel & Spa </strong>
+        </div>
+        <div style="text-align: left; margin-bottom: 10px;">
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="review.png" alt="հյուրանոց" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            4 աստղանի հյուրանոց
+          </p>
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="bed.png" alt="անկողին" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            2 անկողնով սենյակներ
+          </p>
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="air-conditioner.png" alt="օդորակիչ" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            Օդորակիչ յուրաքանչյուր սենյակում
+          </p>
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="television.png" alt="հեռուստացույց" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            Հեռուստացույց և WiFi
+          </p>
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="shower.png" alt="լոգարան" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            Անձնական լոգարան
+          </p>
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="seaside.png" alt="ծովափ" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            Ծովափնյա տեսարան
+          </p>
+          <p style="margin: 8px 0; display: flex; align-items: center;">
+            <img src="ooooooooooooooooooooooooooooooooooo.png" alt="լողավազան" style="width: 20px; height: 20px; margin-right: 10px; object-fit: contain;">
+            Լողավազան և SPA կենտրոն
+          </p>
+        </div>
+        <p style="margin-top: 15px; font-style: italic; color: #047857;">
+          Հարմարավետություն և բարձր որակի սպասարկում
+        </p>
       </div>
       <div class="card fade-in">
         <h3> Մեկնարկի երթուղի</h3>
@@ -345,7 +380,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="section contact fade-in">
     <h2>Կապ մեզ հետ</h2>
     <p style="margin-bottom: 20px; opacity: 0.8;">Ընտրեք հարմար եղանակը մեզ հետ կապ հաստատելու համար</p>
@@ -362,7 +397,7 @@
       Telegram
     </button>
   </section>
-  
+
   <footer>
     © 2025 BAREV Tour  – Բոլոր հեղինակային իրավունքները  պաշտպանված են
   </footer>
@@ -391,7 +426,7 @@
       const shapes = document.querySelectorAll('.floating-shape');
       const mouseX = e.clientX / window.innerWidth;
       const mouseY = e.clientY / window.innerHeight;
-      
+
       shapes.forEach((shape, index) => {
         const speed = (index + 1) * 0.5;
         const x = (mouseX - 0.5) * speed;
